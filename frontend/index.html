@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>African News - Latest Stories from Across the Continent</title>
+  <meta name="description" content="Get the latest news from Africa - politics, business, technology, and more">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="brand">
+          <h1>African News</h1>
+          <p class="tagline">Your Gateway to Africa</p>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      
+      <!-- Search & Filters -->
+      <section class="filters">
+        <input type="search" placeholder="Search articles..." class="search-input" id="searchInput">
+        <select class="filter-select" id="categoryFilter">
+          <option value="">All Categories</option>
+          <option value="Politics">Politics</option>
+          <option value="Business">Business</option>
+          <option value="Technology">Technology</option>
+          <option value="General">General</option>
+        </select>
+      </section>
+
+      <!-- Stats -->
+      <div class="stats" id="stats">
+        <span>Loading articles...</span>
+      </div>
+
+      <!-- Articles Grid -->
+      <section class="articles-grid" id="articlesGrid">
+        <div class="loading">Loading articles...</div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 African News. All rights reserved.</p>
+      <p class="last-updated" id="lastUpdated"></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
