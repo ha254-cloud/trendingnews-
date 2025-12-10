@@ -4,7 +4,7 @@ const API_BASE = window.location.protocol === 'file:' ||
                  window.location.hostname === '127.0.0.1' ||
                  window.location.hostname === ''
   ? 'http://localhost:5000'
-  : 'https://your-backend-url.onrender.com'; // UPDATE THIS AFTER DEPLOYING TO RENDER
+  : 'https://trendingnews-nn9p.onrender.com';
 
 // State
 let allArticles = [];

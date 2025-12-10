@@ -29,6 +29,21 @@ let articlesCache = {
 };
 const CACHE_DURATION = 60000; // 1 minute
 
+// Root route
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'African News API',
+    version: '1.0.0',
+    endpoints: {
+      health: '/health',
+      articles: '/api/articles',
+      article: '/api/articles/:id',
+      refresh: 'POST /api/refresh'
+    },
+    status: 'running'
+  });
+});
+
 // Health check
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
